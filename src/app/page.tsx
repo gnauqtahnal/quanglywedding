@@ -1,9 +1,3 @@
-import Heading from './heading'
-
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Heading />
-    </main>
-  )
+  return <main className=""></main>
 }
