@@ -47,7 +47,7 @@ const CoverParallax = () => {
         <Image
           src={TRANGWD286_FRONT}
           alt="TRANGWD286_FRONT"
-          quality={40}
+          quality={100}
           fill
           sizes="100vw"
           style={{ objectFit: "cover" }}
