@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${sacramento.variable} ${euphoria_script.variable}`}
+      className={`${inter.variable} ${sacramento.variable} ${euphoria_script.variable} bg-[#fef8f0]`}
     >
       <body className={inter.className}>{children}</body>
     </html>

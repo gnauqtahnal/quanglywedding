@@ -1,6 +1,5 @@
 import Calendar from "./calendar"
 import CoverParallax from "./cover-parallax"
-import SvgHeart from "./svg"
 
 export default function Home() {
   return (

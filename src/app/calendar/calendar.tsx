@@ -1,5 +1,4 @@
 import { twMerge } from "tailwind-merge"
-import SvgHeart from "../svg"
 
 interface CalendarItemProps {
   text: string
@@ -84,19 +83,20 @@ const Calendar = () => {
           <CalendarItem text="19" />
           <CalendarItem text="20" />
           <CalendarItem text="21" />
-          <CalendarItem text="22" />
+          <div className="flex aspect-square items-center justify-center rounded-full border border-pink-500">
+            <p className="sacramento text-center text-lg font-bold text-pink-500 md:text-2xl">
+              22
+            </p>
+          </div>
 
           <CalendarItem text="23" />
           <CalendarItem text="24" />
           <CalendarItem text="25" />
           <CalendarItem text="26" />
-          <div>
-            {/* <SvgHeart className="absolute" /> */}
-            <div className="flex aspect-square items-center justify-center rounded-full border border-red-500">
-              <p className="sacramento text-center text-lg font-bold text-red-500 md:text-2xl">
-                27
-              </p>
-            </div>
+          <div className="flex aspect-square items-center justify-center rounded-full border border-blue-800">
+            <p className="sacramento text-center text-lg font-bold text-blue-800 md:text-2xl">
+              27
+            </p>
           </div>
           <CalendarItem text="28" />
           <CalendarItem text="29" />
