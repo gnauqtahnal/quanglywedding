@@ -11,8 +11,8 @@ const CoverParallax = () => {
     target: backgroundRef,
     offset: ["start start", "end start"],
   })
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
-  const frontY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"])
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "60%"])
+  const frontY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"])
 
   return (
     <section
@@ -26,13 +26,13 @@ const CoverParallax = () => {
             y: textY,
           }}
         >
-          <p className="text-center text-4xl text-[#9c9486] md:text-6xl">
+          <p className="inter text-center text-2xl text-[#663300] md:text-4xl">
             SAVE THE DATE
           </p>
-          <p className="text-center text-6xl text-[#9c9486] md:text-9xl">
+          <p className="sacramento mb-8 text-center text-6xl text-[#663300] md:text-9xl">
             Quang & Ly
           </p>
-          <p className="text-center text-3xl text-[#9c9486] md:text-6xl">
+          <p className="sacramento text-center text-2xl text-[#663300] md:text-4xl">
             27 - 09 - 2024
           </p>
         </motion.div>
@@ -47,7 +47,7 @@ const CoverParallax = () => {
         <Image
           src={TRANGWD286_FRONT}
           alt="TRANGWD286_FRONT"
-          quality={100}
+          quality={40}
           fill
           sizes="100vw"
           style={{ objectFit: "cover" }}

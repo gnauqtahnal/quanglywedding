@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.inter {
+  font-family: var(--font-inter);
+}
+
+.sacramento {
+  font-family: var(--font-sacramento);
+}
+
+.euphoria_script {
+  font-family: var(--font-euphoria-script);
+}
