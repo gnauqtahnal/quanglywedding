@@ -1,28 +1,30 @@
 import type { Metadata } from "next"
-import { Inter, Sacramento, Euphoria_Script, Oooh_Baby } from "next/font/google"
+import { Sacramento, Oooh_Baby, WindSong, Yomogi } from "next/font/google"
 import "./globals.css"
+import StyledComponentsRegistry from "@/lib/registry"
 
-const inter = Inter({
-  subsets: ["latin", "vietnamese"],
-  variable: "--font-inter",
-  display: "swap",
-})
 const sacramento = Sacramento({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-sacramento",
   display: "swap",
 })
-const euphoria_script = Euphoria_Script({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-euphoria-script",
-  display: "swap",
-})
 const oooh_baby = Oooh_Baby({
   subsets: ["latin", "vietnamese"],
   weight: "400",
   variable: "--font-oooh-baby",
+  display: "swap",
+})
+const windsong = WindSong({
+  subsets: ["latin", "vietnamese"],
+  weight: "400",
+  variable: "--font-windsong",
+  display: "swap",
+})
+const yomogi = Yomogi({
+  subsets: ["latin", "vietnamese"],
+  weight: "400",
+  variable: "--font-yomogi",
   display: "swap",
 })
 
@@ -39,9 +41,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${sacramento.variable} ${euphoria_script.variable} ${oooh_baby.variable} bg-[#fef8f0]`}
+      className={`${sacramento.variable} ${oooh_baby.variable} ${windsong.variable} ${yomogi.variable}`}
     >
-      <body className={inter.className}>{children}</body>
+      <body className="bg-[#fef8f0]">
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   )
 }

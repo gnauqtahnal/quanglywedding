@@ -33,11 +33,11 @@ const CountDown = () => {
   }, [])
 
   return (
-    <div className="sacramento grid grid-cols-1 grid-rows-2 place-items-center items-center justify-center bg-[#fff2e6] text-center align-middle text-4xl text-[#663300] md:text-6xl">
-      <div className="flex items-center justify-center">
-        <p>Cùng chúng mình đếm ngược khoảnh khắc nhé</p>
+    <div className="flex flex-col items-center justify-center bg-[#fff2e6] text-center align-middle text-[#663300]">
+      <div className="flex items-center justify-center px-4 py-2 text-2xl md:text-4xl">
+        <p className="inter">Cùng chúng mình đếm ngược khoảnh khắc này nhé</p>
       </div>
-      <div className="m-4 flex flex-row items-center justify-center">
+      <div className="sacramento m-4 flex flex-row items-center justify-center text-4xl md:text-6xl">
         <div className="grid grid-cols-3 grid-rows-2">
           <p className="h-[30px] w-[30px] align-middle md:h-[50px] md:w-[50px]">
             {Math.floor(days / 10)}

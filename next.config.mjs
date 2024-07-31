@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // images: {
-  //   dangerouslyAllowSVG: true,
-  // },
+  compiler: {
+    styledComponents: true,
+  },
 }
 
 export default nextConfig

@@ -51,6 +51,7 @@ const CoverParallax = () => {
           fill
           sizes="100vw"
           style={{ objectFit: "cover" }}
+          unoptimized
         />
       </motion.div>
 

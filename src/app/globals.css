@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .inter {
-  font-family: var(--font-inter);
+  /* font-family: var(--font-inter); */
+  font-family: var(--font-yomogi);
 }
 
 .sacramento {
@@ -11,6 +12,6 @@
   /* font-family: var(--font-sacramento); */
 }
 
-.euphoria_script {
-  font-family: var(--font-euphoria-script);
+.windsong {
+  font-family: var(--font-windsong);
 }
