@@ -9,7 +9,6 @@ export default function Home() {
       <CoverParallax />
       <Calendar />
       <CountDown />
-      {/* <div className="h-[20vh] w-screen" /> */}
       <Footer />
     </main>
   )
