@@ -5,6 +5,7 @@ import ImgHeart from '@/public/finger-print-heart-red.png'
 import { send_flowers } from '@/app/ui/fonts'
 import Calendar from '@/app/ui/calendar'
 import Footer from '@/app/footer'
+import ReservationForm from '@/app/ui/reservation-form'
 
 export default function Home() {
   return (
@@ -97,6 +98,10 @@ export default function Home() {
           </TextMd>
           <TextMd className=''>TP. Hồ Chí Minh</TextMd>
         </div>
+      </div>
+
+      <div className='flex items-center justify-center'>
+        <ReservationForm />
       </div>
 
       <Footer />
