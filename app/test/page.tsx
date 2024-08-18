@@ -5,6 +5,7 @@ import ScrollReveal from '@/app/ui/scroll-reveal'
 import ReservationForm from '@/app/ui/reservation-form'
 import ImgRose from '@/public/rose.png'
 import Image from 'next/image'
+import Calendar from '@/app/ui/calendar'
 
 interface PageProps {
   className?: string
@@ -127,12 +128,9 @@ const PageFive = ({ className, children }: PageProps) => {
       )}
     >
       <ScrollReveal
+        once
         childrens={[
-          <p key={1} className='text-4xl'>PageFive Calendar</p>,
-          <p key={2} className='text-lg'>
-            {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
-          </p>,
+          <Calendar key={1} />,
         ]}
       />
       {children}
