@@ -7,6 +7,7 @@ import { useRef } from 'react'
 export interface ScrollRevealProps extends MotionProps {
   className?: string
   childrens?: React.ReactNode | React.ReactNode[]
+  once?: boolean
 }
 
 const revealAnimation = {
@@ -23,9 +24,14 @@ const revealAnimation = {
   },
 }
 
-const ScrollReveal = ({ className, childrens, ...rest }: ScrollRevealProps) => {
+const ScrollReveal = ({
+  className,
+  childrens,
+  once = false,
+  ...rest
+}: ScrollRevealProps) => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { amount: 0.5 })
+  const isInView = useInView(ref, { amount: 0.5, once: once })
   const childs = Array.isArray(childrens) ? childrens : [childrens]
 
   return (
@@ -39,8 +45,15 @@ const ScrollReveal = ({ className, childrens, ...rest }: ScrollRevealProps) => {
       }}
       animate={isInView ? 'visible' : 'hidden'}
     >
-      {childs.map((child) => {
-        return <motion.div variants={revealAnimation}>{child}</motion.div>
+      {childs.map((child, index) => {
+        return (
+          <motion.div
+            key={index}
+            variants={revealAnimation}
+          >
+            {child}
+          </motion.div>
+        )
       })}
     </motion.div>
   )

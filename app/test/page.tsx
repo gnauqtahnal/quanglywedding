@@ -1,7 +1,8 @@
 import clsx from 'clsx'
-import ScrollReveal from '@/app/ui/scroll-reveal'
 import Logo from '@/app/ui/logo'
 import { euphoria, sacramento } from '@/app/ui/fonts'
+import ScrollReveal from '@/app/ui/scroll-reveal'
+import ReservationForm from '@/app/ui/reservation-form'
 import ImgRose from '@/public/rose.png'
 import Image from 'next/image'
 
@@ -192,13 +193,8 @@ const PageEight = ({ className, children }: PageProps) => {
       )}
     >
       <ScrollReveal
-        childrens={[
-          <p className='text-4xl'>PageEight Reservation</p>,
-          <p className='text-lg'>
-            {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
-          </p>,
-        ]}
+        childrens={[<ReservationForm />]}
+        once
       />
       {children}
     </div>
@@ -209,31 +205,32 @@ const PageNine = ({ className, children }: PageProps) => {
   return (
     <div
       className={clsx(
-        'flex h-screen w-screen flex-col items-center justify-center',
+        'flex h-[50vh] w-screen flex-col items-center justify-center',
         className,
       )}
     >
       <Image
-        className='absolute p-8'
+        className='absolute z-0 p-8 opacity-30'
         src={ImgRose}
         alt='ImgRose'
         placeholder='blur'
         width={270}
         height={480}
       />
-      <ScrollReveal
-        childrens={[
-          <p
-            className={`p-8 text-6xl font-bold md:text-8xl ${euphoria.className}`}
-          >
-            Thank you
-          </p>,
-          <p className='text-md md:text-xl'>
-            {`Quang và Ly rất vui và hạnh phúc vì sự góp mặt của mọi người`}
-          </p>,
-        ]}
-      />
-      <div className='flex-1' />
+      <div className='z-30 flex flex-1 flex-col items-center justify-center'>
+        <ScrollReveal
+          childrens={[
+            <p
+              className={`p-8 text-6xl font-bold md:text-8xl ${euphoria.className}`}
+            >
+              Thank you
+            </p>,
+            <p className='text-md md:text-xl'>
+              {`Quang và Ly rất vui và hạnh phúc vì sự góp mặt của mọi người`}
+            </p>,
+          ]}
+        />
+      </div>
       <div className='w-screen bg-[#708871] p-4 pb-16 text-white md:pb-4'>
         <p className='text-lg md:text-xl'>
           Copy right ©2024 created with ❤️ by Quang & Ly

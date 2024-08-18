@@ -4,12 +4,12 @@ import { Button } from '@/app/ui/button'
 const ReservationForm = () => {
   return (
     <form action={createReservationForm}>
-      <div className='w-full rounded-md bg-gray-50 p-4 md:w-[50vw]'>
+      <div className='w-full rounded-md bg-[#708871] p-4 text-left text-lg md:w-[50vw] md:text-xl'>
         {/* input field for name */}
         <div className='mb-4'>
           <label
             htmlFor='name'
-            className='mb-2 block text-sm font-medium'
+            className='mb-2 block font-medium text-white'
           >
             Tên của bạn
           </label>
@@ -20,7 +20,7 @@ const ReservationForm = () => {
                 name='name'
                 type='text'
                 placeholder='Tên của bạn là ...'
-                className='peer block w-full rounded-md border border-gray-200 p-2 text-sm outline-2 placeholder:text-gray-500'
+                className='peer block w-full rounded-md border border-gray-200 bg-[#FEF3E2] p-2 outline-2 placeholder:text-gray-500'
                 required
               />
             </div>
@@ -30,7 +30,7 @@ const ReservationForm = () => {
         <div className='mb-4'>
           <label
             htmlFor='wish'
-            className='mb-2 block text-sm font-medium'
+            className='mb-2 block font-medium text-white'
           >
             Lời nhắn của bạn
           </label>
@@ -41,29 +41,30 @@ const ReservationForm = () => {
                 name='wish'
                 type='text'
                 placeholder='Lời nhắn của bạn là ...'
-                className='peer block h-[20vh] w-full rounded-md border border-gray-200 p-2 text-sm outline-2 placeholder:text-gray-500'
+                className='peer block h-[20vh] w-full rounded-md border border-gray-200 bg-[#FEF3E2] p-2 outline-2 placeholder:text-gray-500'
               />
             </div>
           </div>
         </div>
         {/* reservation confirm checkbox */}
         <fieldset>
-          <legend className='mb-2 block text-sm font-medium'>
+          <legend className='mb-2 block font-medium text-white'>
             Bạn sẽ đến để tham dự buổi lễ của chúng mình chứ
           </legend>
-          <div className='rounded-md border border-gray-200 bg-white p-2'>
+          <div className='p-2'>
             <div className='flex flex-row items-center justify-start'>
               <input
                 id='join'
                 name='join'
                 type='checkbox'
                 value='join'
-                className='h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2'
+                className='h-4 w-4 cursor-pointer border-gray-300 bg-[#FEF3E2] text-gray-600 focus:ring-2'
+                defaultChecked
               />
               <div className='flex items-center'>
                 <label
                   htmlFor='join'
-                  className='ml-2 flex cursor-pointer items-center text-xs font-medium'
+                  className='ml-2 flex cursor-pointer items-center font-medium text-white'
                 >
                   Mình chắc chắn có mặt
                 </label>
