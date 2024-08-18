@@ -37,8 +37,8 @@ const PageOne = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <Logo className='text-[8rem] md:text-[10rem]' />,
-          <p className={`${sacramento.className} text-[3rem] md:text-[5rem]`}>
+          <Logo key={1} className='text-[8rem] md:text-[10rem]' />,
+          <p key={2} className={`${sacramento.className} text-[3rem] md:text-[5rem]`}>
             Quang & Ly
           </p>,
         ]}
@@ -58,9 +58,9 @@ const PageTwo = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <p className='text-[1rem] md:text-[1.5rem]'>{`Đây là một chiếc thiệp handmade`}</p>,
-          <p className='text-[1rem] md:text-[1.5rem]'>{`Chúng mình đã tạo ra để gửi một lời mời chân thành`}</p>,
-          <p className='text-[1rem] md:text-[1.5rem]'>{`đến với những người mà chúng mình rất yêu quý`}</p>,
+          <p key={1} className='text-[1rem] md:text-[1.5rem]'>{`Đây là một chiếc thiệp handmade`}</p>,
+          <p key={2} className='text-[1rem] md:text-[1.5rem]'>{`Chúng mình đã tạo ra để gửi một lời mời chân thành`}</p>,
+          <p key={3} className='text-[1rem] md:text-[1.5rem]'>{`đến với những người mà chúng mình rất yêu quý`}</p>,
         ]}
       />
       {children}
@@ -78,16 +78,16 @@ const PageThree = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <div className='flex flex-col items-start justify-center text-left'>
-            <p className='text-2xl font-bold md:text-3xl'>Chú rể</p>
-            <p className='text-md md:text-xl'>{`Đóng vai trò là người tạo ra những đoạn code này.`}</p>
-            <p className='text-md md:text-xl'>{`Tình cờ bạn thân thời cấp 3 lại là bạn thân thời Đại học của cô dâu.`}</p>
+          <div key={1} className='flex flex-col items-start justify-center text-left'>
+            <p key={2} className='text-2xl font-bold md:text-3xl'>Chú rể</p>
+            <p key={3} className='text-md md:text-xl'>{`Đóng vai trò là người tạo ra những đoạn code này.`}</p>
+            <p key={4} className='text-md md:text-xl'>{`Tình cờ bạn thân thời cấp 3 lại là bạn thân thời Đại học của cô dâu.`}</p>
           </div>,
 
-          <div className='flex flex-col items-end justify-center text-right'>
-            <p className='text-2xl font-bold md:text-3xl'>Cô dâu</p>
-            <p className='text-md md:text-xl'>{`Người gieo hạt giống trí tuệ và vun đắp tương lại cho các bạn nhỏ.`}</p>
-            <p className='text-md md:text-xl'>{`Không chỉ hướng đến mục tiêu cải thiện kỹ năng mà còn nhắm đến việc hỗ trợ các bạn nhỏ hoà nhập xã hội.`}</p>
+          <div key={5} className='flex flex-col items-end justify-center text-right'>
+            <p key={6} className='text-2xl font-bold md:text-3xl'>Cô dâu</p>
+            <p key={7} className='text-md md:text-xl'>{`Người gieo hạt giống trí tuệ và vun đắp tương lại cho các bạn nhỏ.`}</p>
+            <p key={8} className='text-md md:text-xl'>{`Không chỉ hướng đến mục tiêu cải thiện kỹ năng mà còn nhắm đến việc hỗ trợ các bạn nhỏ hoà nhập xã hội.`}</p>
           </div>,
         ]}
       />
@@ -106,8 +106,8 @@ const PageFour = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <p className='text-4xl'>PageFour Our timeline</p>,
-          <p className='text-lg'>
+          <p key={1} className='text-4xl'>PageFour Our timeline</p>,
+          <p key={2} className='text-lg'>
             {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
           </p>,
@@ -128,8 +128,8 @@ const PageFive = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <p className='text-4xl'>PageFive Calendar</p>,
-          <p className='text-lg'>
+          <p key={1} className='text-4xl'>PageFive Calendar</p>,
+          <p key={2} className='text-lg'>
             {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
           </p>,
@@ -150,8 +150,8 @@ const PageSix = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <p className='text-4xl'>PageSix specific date time, location</p>,
-          <p className='text-lg'>
+          <p key={1} className='text-4xl'>PageSix specific date time, location</p>,
+          <p key={2} className='text-lg'>
             {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
           </p>,
@@ -172,8 +172,8 @@ const PageSeven = ({ className, children }: PageProps) => {
     >
       <ScrollReveal
         childrens={[
-          <p className='text-4xl'>PageSeven Album</p>,
-          <p className='text-lg'>
+          <p key={1} className='text-4xl'>PageSeven Album</p>,
+          <p key={2} className='text-lg'>
             {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
           </p>,
@@ -193,7 +193,7 @@ const PageEight = ({ className, children }: PageProps) => {
       )}
     >
       <ScrollReveal
-        childrens={[<ReservationForm />]}
+        childrens={[<ReservationForm key={1} />]}
         once
       />
       {children}
@@ -220,12 +220,14 @@ const PageNine = ({ className, children }: PageProps) => {
       <div className='z-30 flex flex-1 flex-col items-center justify-center'>
         <ScrollReveal
           childrens={[
-            <p
+            <p key={1}
               className={`p-8 text-6xl font-bold md:text-8xl ${euphoria.className}`}
             >
               Thank you
             </p>,
-            <p className='text-md md:text-xl'>
+            <p
+              key={2}
+              className='text-md md:text-xl'>
               {`Quang và Ly rất vui và hạnh phúc vì sự góp mặt của mọi người`}
             </p>,
           ]}
