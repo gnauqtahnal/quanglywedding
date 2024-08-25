@@ -1,9 +1,9 @@
 'use server'
 
-import { z } from 'zod'
+import prisma from './prisma'
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
-import prisma from './prisma'
+import { z } from 'zod'
 
 const FormSchema = z.object({
   id: z.string(),
@@ -21,7 +21,6 @@ export const createReservationForm = async (formData: FormData) => {
     wish: formData.get('wish') || '',
     join: formData.get('join') || '',
   })
-  // const date = new Date().toISOString().split('T')[0]
 
   try {
     await prisma.reservation.create({

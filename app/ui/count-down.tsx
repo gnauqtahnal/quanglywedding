@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import { TextBoxXl } from '@/app/ui/text'
+import { useEffect, useState } from 'react'
 
 const CountDown = () => {
   const [days, setDays] = useState(0)

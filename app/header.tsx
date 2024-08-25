@@ -1,11 +1,11 @@
 'use client'
 
-import Image from 'next/image'
+import CountDown from '@/app/ui/count-down'
 import TRANGWD286_BACK from '@/public/TRANGWD286_BACK.webp'
 import TRANGWD286_FRONT from '@/public/TRANGWD286_FRONT.webp'
-import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import CountDown from '@/app/ui/count-down'
+import Image from 'next/image'
+import { useRef } from 'react'
 
 export default function Header() {
   const backgroundRef = useRef(null)

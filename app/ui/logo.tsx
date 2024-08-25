@@ -1,6 +1,6 @@
+import { euphoria } from '@/app/ui/fonts'
 import clsx from 'clsx'
 import { HTMLAttributes } from 'react'
-import { euphoria } from '@/app/ui/fonts'
 
 export interface LogoProps extends HTMLAttributes<HTMLDivElement> {
   className?: string

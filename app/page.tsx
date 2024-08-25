@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import { TextMd, TextXl } from '@/app/ui/text'
-import Header from '@/app/header'
-import ImgHeart from '@/public/finger-print-heart-red.png'
-import { send_flowers } from '@/app/ui/fonts'
-import Calendar from '@/app/ui/calendar'
 import Footer from '@/app/footer'
+import Header from '@/app/header'
+import Calendar from '@/app/ui/calendar'
+import { send_flowers } from '@/app/ui/fonts'
 import ReservationForm from '@/app/ui/reservation-form'
+import { TextMd, TextXl } from '@/app/ui/text'
+import ImgHeart from '@/public/finger-print-heart-red.png'
+import Image from 'next/image'
 
 export default function Home() {
   return (

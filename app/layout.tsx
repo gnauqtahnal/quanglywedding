@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
-import { dosis } from '@/app/ui/fonts'
 import './globals.css'
+import { dosis } from '@/app/ui/fonts'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: "Quang and Ly's wedding",

@@ -1,22 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* body { */
-/*   background: no-repeat url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) */
-/*     0 0; */
-/*   background-color: #ebebeb; */
-/*   background-repeat: repeat; */
-/* } */
-
-/* h1 {
-  font-family: var(--font-windsong);
-}
-
-h2 {
-  font-family: var(--font-charmonman);
-}
-
-p {
-  font-family: var(--font-cormorant-upright);
-} */

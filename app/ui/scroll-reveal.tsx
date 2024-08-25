@@ -1,8 +1,8 @@
 'use client'
 
-import React from 'react'
 import clsx from 'clsx'
 import { motion, MotionProps, useInView } from 'framer-motion'
+import React from 'react'
 import { useRef } from 'react'
 
 export interface ScrollRevealProps extends MotionProps {

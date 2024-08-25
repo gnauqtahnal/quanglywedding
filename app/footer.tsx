@@ -1,5 +1,5 @@
-import clsx from 'clsx'
 import { windsong } from '@/app/ui/fonts'
+import clsx from 'clsx'
 
 const Footer = () => {
   return (
