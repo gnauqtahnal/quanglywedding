@@ -23,7 +23,7 @@ export const ButtonLayer = ({ id, maxId }: { id: number; maxId: number }) => {
   }
 
   const prevId = () => {
-    let newId = id + 1
+    let newId = id - 1
     if (newId < 0) {
       newId = maxId - 1
     }
