@@ -26,16 +26,16 @@ export const SecDateTime = ({ className }: { className?: string }) => {
         <ScrollRevealFromLeft>
           <SecDateGroom
             className={clsx(
-              'md:w-[calc(40vw)] md:h-[calc(80vh)]',
-              'w-[calc(80vw)] h-[calc(60vh)]',
+              'md:w-[calc(40vw)] md:h-[calc(90vh)]',
+              'w-[calc(80vw)] h-[calc(70vh)]',
             )}
           />
         </ScrollRevealFromLeft>
         <ScrollRevealFromRight>
           <SecDateBride
             className={clsx(
-              'md:w-[calc(40vw)] md:h-[calc(80vh)]',
-              'w-[calc(80vw)] h-[calc(60vh)]',
+              'md:w-[calc(40vw)] md:h-[calc(90vh)]',
+              'w-[calc(80vw)] h-[calc(70vh)]',
             )}
           />
         </ScrollRevealFromRight>
@@ -167,7 +167,7 @@ const SecDateBride = ({ className }: { className?: string }) => {
               'text-4xl md:text-5xl py-4',
             )}
           >
-            9h00
+            18h00
           </div>
           <div className='grid grid-cols-3'>
             <div className='flex flex-col items-center justify-center border-r border-wed1/50 px-3'>
