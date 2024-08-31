@@ -1,13 +1,16 @@
-import type { Metadata } from 'next'
-import { dosis } from '@/app/ui/fonts'
 import './globals.css'
+import HomeLoading from './loading'
+import { dosis } from '@/ui/fonts'
+import clsx from 'clsx'
+import type { Metadata } from 'next'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   title: "Quang and Ly's wedding",
   description: 'Wedding invitation',
 }
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
@@ -15,9 +18,11 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${dosis.variable}`}
+      className={clsx('bg-wed2', dosis.className)}
     >
-      <body className={`${dosis.className}`}>{children}</body>
+      <Suspense fallback={<HomeLoading />}>
+        <body>{children}</body>
+      </Suspense>
     </html>
   )
 }
