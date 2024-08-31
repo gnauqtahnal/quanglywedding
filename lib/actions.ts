@@ -37,5 +37,5 @@ export const createReservationForm = async (formData: FormData) => {
   }
 
   revalidatePath('/')
-  redirect('/')
+  redirect('/#thank-you')
 }

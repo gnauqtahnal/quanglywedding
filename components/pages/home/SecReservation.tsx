@@ -16,10 +16,8 @@ export const SecReservation = ({ className }: { className?: string }) => {
         className={clsx('text-4xl md:text-5xl', send_flowers.className, 'py-4')}
       >{`Sổ lưu bút`}</div>
       <div>{`Cám ơn các bạn rất nhiều vì đã gửi những`}</div>
-      <div className='flex flex-row'>
-        {`lời chúc tốt đẹp nhất đến với đám cưới của chúng mình`}
-        <HeartIcon className='w-6 h-6 ml-2' />
-      </div>
+      <div>{`lời chúc tốt đẹp nhất đến với đám cưới của chúng mình`}</div>
+      <HeartIcon className='w-6 h-6 text-red-500/80' />
       <div className='mt-4 mb-8 w-[calc(10vw)] border-t' />
 
       <form action={createReservationForm}>

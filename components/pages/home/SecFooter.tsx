@@ -1,13 +1,22 @@
-import { FlexColCenterCenter } from '@/components/Flex'
-import { ScrollReveal, ScrollRevealFromLeft } from '@/components/scroll/reveal'
+import {
+  ScrollReveal,
+  ScrollRevealFromLeft,
+  ScrollRevealFromRight,
+} from '@/components/scroll/reveal'
 import ImgRose from '@/public/rose.png'
-import { send_flowers } from '@/ui/fonts'
+import { sacramento, send_flowers, windsong } from '@/ui/fonts'
 import clsx from 'clsx'
 import Image from 'next/image'
 
 export const SecFooter = ({ className }: { className?: string }) => {
   return (
-    <FlexColCenterCenter className={clsx('w-screen h-[500px]', className)}>
+    <div
+      id='thank-you'
+      className={clsx(
+        'w-screen h-screen flex flex-col justify-center items-center',
+        className,
+      )}
+    >
       <Image
         className='absolute z-0 p-8 opacity-20'
         src={ImgRose}
@@ -16,11 +25,10 @@ export const SecFooter = ({ className }: { className?: string }) => {
         width={270}
         height={480}
       />
-      <FlexColCenterCenter className='z-30 flex-1'>
+      <div className='flex flex-col justify-center items-center z-30 flex-1'>
         <ScrollReveal>
           <ScrollRevealFromLeft>
             <p
-              key={1}
               className={clsx(
                 'p-8 text-7xl font-bold md:text-8xl',
                 send_flowers.className,
@@ -28,20 +36,37 @@ export const SecFooter = ({ className }: { className?: string }) => {
             >
               {`Thank you`}
             </p>
-            <p
-              key={2}
-              className='text-lg md:text-xl'
-            >
-              {`Quang và Ly rất vui và hạnh phúc vì sự góp mặt của mọi người`}
-            </p>
           </ScrollRevealFromLeft>
+          <ScrollRevealFromRight>
+            <div className='flex flex-row items-center justify-center'>
+              <p className={clsx(sacramento.className, 'text-3xl md:5xl')}>
+                &nbsp;Quang&nbsp;
+              </p>
+              <p>{`và`}</p>
+              <p className={clsx(sacramento.className, 'text-3xl md:5xl')}>
+                &nbsp;Ly&nbsp;
+              </p>
+              <p>{`rất vui và hạnh phúc`}</p>
+            </div>
+            <p>{`vì sự góp mặt của mọi người`}</p>
+          </ScrollRevealFromRight>
         </ScrollReveal>
-      </FlexColCenterCenter>
-      <FlexColCenterCenter>
+      </div>
+      <div className='flex flex-col justify-center items-center py-8'>
         <p className='text-lg md:text-xl p-4'>
-          Copy right ©2024 created with ❤️ by Quang & Ly
+          Copy right ©2024 created with ❤️
         </p>
-      </FlexColCenterCenter>
-    </FlexColCenterCenter>
+        <div className='flex flex-row justify-center items-center'>
+          <p>by</p>
+          <p className={clsx(sacramento.className, 'text-3xl md:5xl')}>
+            &nbsp;Quang&nbsp;
+          </p>
+          <p>và</p>
+          <p className={clsx(sacramento.className, 'text-3xl md:5xl')}>
+            &nbsp;Ly&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }

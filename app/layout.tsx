@@ -18,7 +18,10 @@ export default function HomeLayout({
   return (
     <html
       lang='en'
-      className={clsx('bg-wed2', dosis.className)}
+      className={clsx(
+        'bg-wed2 text-center text-lg md:text-xl',
+        dosis.className,
+      )}
     >
       <Suspense fallback={<HomeLoading />}>
         <body>{children}</body>
