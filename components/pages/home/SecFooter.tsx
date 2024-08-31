@@ -1,7 +1,7 @@
 import { FlexColCenterCenter } from '@/components/Flex'
 import { ScrollReveal, ScrollRevealFromLeft } from '@/components/scroll/reveal'
 import ImgRose from '@/public/rose.png'
-import { euphoria } from '@/ui/fonts'
+import { send_flowers } from '@/ui/fonts'
 import clsx from 'clsx'
 import Image from 'next/image'
 
@@ -23,7 +23,7 @@ export const SecFooter = ({ className }: { className?: string }) => {
               key={1}
               className={clsx(
                 'p-8 text-7xl font-bold md:text-8xl',
-                euphoria.className,
+                send_flowers.className,
               )}
             >
               {`Thank you`}

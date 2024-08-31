@@ -37,7 +37,10 @@ export const SecAlbum = ({ className }: { className?: string }) => {
       >
         {images.map((image) => {
           return (
-            <Link href={`/carousel?id=${image.id}&direction=1`}>
+            <Link
+              key={image.id}
+              href={`/carousel?id=${image.id}&direction=1`}
+            >
               <Image
                 key={image.id}
                 src={image.src}
