@@ -12,16 +12,16 @@ import {
 
 const HomePage = () => {
   return (
-    <FlexColCenterStart className='relative text-wed1 min-h-screen w-screen text-lg md:text-xl'>
+    <div className='relative flex flex-col justify-start items-center text-wed1 min-h-screen w-screen text-lg md:text-xl overflow-hidden'>
       <SecCover />
-      <FlexColCenterStart className='relative bg-gradient-to-b from-wed3 to-wed2 w-screen'>
+      <div className='relative flex flex-col justify-center items-center bg-gradient-to-b from-wed3 to-wed2 w-screen'>
         <SecIntro />
         <SecDateTime />
         <SecAlbum />
         <SecReservation />
         <SecFooter />
-      </FlexColCenterStart>
-    </FlexColCenterStart>
+      </div>
+    </div>
   )
 }
 

@@ -11,7 +11,7 @@ export const ButtonLayer = ({ id, maxId }: { id: number; maxId: number }) => {
   const router = useRouter()
 
   const exitCarousel = () => {
-    router.push(`/gallery`)
+    router.push(`/`)
   }
 
   const nextId = () => {
@@ -19,7 +19,7 @@ export const ButtonLayer = ({ id, maxId }: { id: number; maxId: number }) => {
     if (newId > maxId - 1) {
       newId = 0
     }
-    router.push(`/gallery/carousel?id=${newId}&direction=1`)
+    router.push(`/carousel?id=${newId}&direction=1`)
   }
 
   const prevId = () => {
@@ -27,7 +27,7 @@ export const ButtonLayer = ({ id, maxId }: { id: number; maxId: number }) => {
     if (newId < 0) {
       newId = maxId - 1
     }
-    router.push(`/gallery/carousel?id=${newId}&direction=-1`)
+    router.push(`/carousel?id=${newId}&direction=-1`)
   }
 
   return (

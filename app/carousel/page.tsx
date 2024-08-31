@@ -16,7 +16,7 @@ export default function Page({
     <div
       className={clsx(
         'w-screen h-screen overflow-hidden',
-        'bg-gradient-to-b from-black/80 to-black/90',
+        'bg-gradient-to-b from-wed3/90 to-wed2/0',
       )}
     >
       <ImageLayer

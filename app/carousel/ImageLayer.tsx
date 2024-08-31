@@ -45,7 +45,7 @@ export const ImageLayer = ({
     } else if (newId > maxId - 1) {
       newId = 0
     }
-    router.push(`/gallery/carousel?id=${newId}&direction=${direction}`)
+    router.push(`/carousel?id=${newId}&direction=${direction}`)
   }
 
   const handlers = useSwipeable({
