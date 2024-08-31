@@ -1,8 +1,8 @@
 'use client'
 
-import CountDown from '@/app/ui/count-down'
 import TRANGWD286_BACK from '@/public/TRANGWD286_BACK.webp'
 import TRANGWD286_FRONT from '@/public/TRANGWD286_FRONT.webp'
+import CountDown from '@/ui/count-down'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'

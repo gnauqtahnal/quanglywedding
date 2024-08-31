@@ -1,5 +1,4 @@
-import { createReservationForm } from '@/app/lib/actions'
-import { Button } from '@/app/ui/button'
+import { createReservationForm } from '@/lib/actions'
 
 const ReservationForm = () => {
   return (
@@ -74,7 +73,7 @@ const ReservationForm = () => {
         </fieldset>
         {/* submit button */}
         <div className='mt-6 flex justify-end gap-4'>
-          <Button type='submit'>Gửi lời nhắn</Button>
+          <button type='submit'>Gửi lời nhắn</button>
         </div>
       </div>
     </form>

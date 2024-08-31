@@ -1,58 +1,29 @@
-import Calendar from '@/app/ui/calendar'
-import { euphoria, sacramento } from '@/app/ui/fonts'
-import Logo from '@/app/ui/logo'
-import ReservationForm from '@/app/ui/reservation-form'
-import ScrollReveal from '@/app/ui/scroll-reveal'
+import { PageOneCover } from './PageOneCover'
+import { PageProps } from './types'
 import i683_ly from '@/public/i638_ly.png'
 import i683_quang from '@/public/i638_quang.png'
 import ImgRose from '@/public/rose.png'
+import Calendar from '@/ui/calendar'
+import { euphoria, sacramento } from '@/ui/fonts'
+import ReservationForm from '@/ui/reservation-form'
+import ScrollReveal from '@/ui/scroll-reveal'
 import clsx from 'clsx'
 import Image from 'next/image'
 
-interface PageProps {
-  className?: string
-  children?: React.ReactNode
-}
-
 const Page = () => {
   return (
-    <div className='flex flex-col items-center justify-center text-center align-middle text-[#606676]'>
-      <PageOne className='bg-[#BEC6A0]' />
-      <PageTwo className='bg-[#FEF3E2]' />
-      <PageThree className='bg-[#BEC6A0]' />
-      <PageFour className='bg-[#FEF3E2]' />
-      <PageFive className='bg-[#BEC6A0]' />
-      <PageSix className='bg-[#FEF3E2]' />
-      <PageSeven className='bg-[#BEC6A0]' />
-      <PageEight className='bg-[#FEF3E2]' />
-      <PageNine className='bg-[#BEC6A0]' />
-    </div>
-  )
-}
-
-const PageOne = ({ className, children }: PageProps) => {
-  return (
-    <div
-      className={clsx(
-        'flex h-screen w-screen flex-col items-center justify-center',
-        className,
-      )}
-    >
-      <ScrollReveal
-        childrens={[
-          <Logo
-            key={1}
-            className='text-[8rem] md:text-[10rem]'
-          />,
-          <p
-            key={2}
-            className={`${sacramento.className} text-[3rem] md:text-[5rem]`}
-          >
-            Quang & Ly
-          </p>,
-        ]}
-      />
-      {children}
+    <div className='flex flex-col items-center justify-center text-center align-middle text-[#FEF3E2]'>
+      <PageOneCover className='bg-[#708871]' />
+      <div className='flex flex-col items-center justify-center align-middle bg-gradient-to-b from-[#708871] to-[#BEC6A0]'>
+        <PageTwo />
+        <PageThree />
+        {/* <PageFour /> */}
+        <PageFive />
+        <PageSix />
+        <PageSeven />
+        <PageEight />
+        <PageNine />
+      </div>
     </div>
   )
 }
@@ -61,7 +32,7 @@ const PageTwo = ({ className, children }: PageProps) => {
   return (
     <div
       className={clsx(
-        'flex h-screen w-screen flex-col items-center justify-center',
+        'flex w-screen flex-col items-center justify-center py-4',
         className,
       )}
     >
@@ -90,7 +61,7 @@ const PageThree = ({ className, children }: PageProps) => {
   return (
     <div
       className={clsx(
-        'flex h-screen w-screen flex-col items-center justify-center p-4',
+        'flex w-screen flex-col items-center justify-center py-4',
         className,
       )}
     >
@@ -340,7 +311,7 @@ const PageNine = ({ className, children }: PageProps) => {
           ]}
         />
       </div>
-      <div className='w-screen bg-[#708871] p-4 pb-16 text-white md:pb-4'>
+      <div className='w-screen bg-[#708871] p-4 pb-16 md:pb-4'>
         <p className='text-lg md:text-xl'>
           Copy right ©2024 created with ❤️ by Quang & Ly
         </p>
