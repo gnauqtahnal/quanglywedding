@@ -11,7 +11,7 @@ export const ButtonLayer = ({ id, maxId }: { id: number; maxId: number }) => {
   const router = useRouter()
 
   const exitCarousel = () => {
-    router.push(`/`)
+    router.push(`/#our-photobook`)
   }
 
   const nextId = () => {

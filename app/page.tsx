@@ -17,7 +17,9 @@ const HomePage = () => {
       <div className='relative flex flex-col justify-center items-center bg-gradient-to-b from-wed3 to-wed2 w-screen'>
         <SecIntro />
         <SecDateTime />
-        <SecAlbum />
+        <div id='our-photobook'>
+          <SecAlbum />
+        </div>
         <SecReservation />
         <SecFooter />
       </div>
