@@ -70,7 +70,7 @@ const SecDateGroom = ({ className }: { className?: string }) => {
     >
       <div
         className={clsx(
-          'flex flex-col',
+          'flex flex-col items-center justify-center',
           'w-full h-full',
           'bg-gradient-to-b from-wed3/90 to-wed2/0 rounded-t-xl p-4 pb-10',
         )}
@@ -85,7 +85,9 @@ const SecDateGroom = ({ className }: { className?: string }) => {
           Lễ Vu Quy
         </div>
 
-        <div className=''>được tổ chức vào lúc</div>
+        <div className='flex items-center justify-center'>
+          được tổ chức vào lúc
+        </div>
         <div className='flex flex-col items-center justify-center'>
           <div
             className={clsx(
@@ -142,7 +144,7 @@ const SecDateBride = ({ className }: { className?: string }) => {
     >
       <div
         className={clsx(
-          'flex flex-col',
+          'flex flex-col justify-center items-center',
           'w-full h-full',
           'bg-gradient-to-b from-wed3/90 to-wed2/0 rounded-t-xl p-4 pb-10',
         )}

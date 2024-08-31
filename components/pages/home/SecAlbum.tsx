@@ -45,6 +45,7 @@ export const SecAlbum = ({ className }: { className?: string }) => {
                 key={image.id}
                 src={image.src}
                 alt='gallery'
+                placeholder='blur'
                 className='rounded-xl mb-2'
               />
             </Link>

@@ -1,6 +1,6 @@
 import { createReservationForm } from '@/lib/actions'
 import { send_flowers } from '@/ui/fonts'
-import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
+import { HeartIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 
 export const SecReservation = ({ className }: { className?: string }) => {
@@ -15,8 +15,11 @@ export const SecReservation = ({ className }: { className?: string }) => {
       <div
         className={clsx('text-4xl md:text-5xl', send_flowers.className, 'py-4')}
       >{`Sổ lưu bút`}</div>
-      <div>{`Cám ơn các bạn rất nhiều vì đã gửi những lời chúc`}</div>
-      <div className=''>{`tốt đẹp nhất đến với đám cưới của chúng mình`}</div>
+      <div>{`Cám ơn các bạn rất nhiều vì đã gửi những`}</div>
+      <div className='flex flex-row'>
+        {`lời chúc tốt đẹp nhất đến với đám cưới của chúng mình`}
+        <HeartIcon className='w-6 h-6 ml-2' />
+      </div>
       <div className='mt-4 mb-8 w-[calc(10vw)] border-t' />
 
       <form action={createReservationForm}>
