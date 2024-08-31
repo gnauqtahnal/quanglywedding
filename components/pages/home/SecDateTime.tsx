@@ -47,9 +47,9 @@ export const SecDateTime = ({ className }: { className?: string }) => {
         </ScrollRevealFromLeft>
       </ScrollReveal>
 
-      <ScrollReveal>
+      <ScrollReveal className='flex flex-col items-center justify-center'>
         <ScrollRevealFromLeft>
-          <div className='pt-4 text-lg md:text-xl'>{`cùng chúng mình đếm ngược khoảnh khắc này nhé`}</div>
+          <div className='py-4 text-lg md:text-xl'>{`cùng chúng mình đếm ngược khoảnh khắc này nhé`}</div>
         </ScrollRevealFromLeft>
         <ScrollRevealFromRight>
           <CountDown />
@@ -275,7 +275,7 @@ const Calendar = ({ className }: { className?: string }) => {
             <div>19</div>
             <div>20</div>
             <div>21</div>
-            <div className='flex aspect-square items-center justify-center rounded-full border bg-wed3 text-wed1'>
+            <div className='flex aspect-square items-center justify-center rounded-full border bg-pink-500/50 text-wed1'>
               <div>22</div>
             </div>
 
@@ -283,7 +283,7 @@ const Calendar = ({ className }: { className?: string }) => {
             <div>24</div>
             <div>25</div>
             <div>26</div>
-            <div className='flex aspect-square items-center justify-center rounded-full border bg-wed3 text-wed1'>
+            <div className='flex aspect-square items-center justify-center rounded-full border bg-blue-500/50 text-wed1'>
               <div>27</div>
             </div>
             <div>28</div>

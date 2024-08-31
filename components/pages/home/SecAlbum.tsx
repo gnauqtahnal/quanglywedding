@@ -23,7 +23,7 @@ export const SecAlbum = ({ className }: { className?: string }) => {
           'py-4',
           'w-screen flex items-center justify-center',
         )}
-      >{`Album hình cưới`}</div>
+      >{`Our Photobook`}</div>
       <div className='mt-4 mb-8 w-[calc(10vw)] border-t' />
 
       <Masonry

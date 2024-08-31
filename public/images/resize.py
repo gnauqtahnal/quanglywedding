@@ -6,7 +6,9 @@ for file in files:
     if '.jpg' in file:
         img = cv.imread(file)
         ratio = img.shape[1] / img.shape[0]
-        print(img.shape, ratio)
         newWidth = 1920
-        newHeight = newWidth * ratio
-        newImg = cv.resize(img, [newWidth, newHeight])
+        newHeight = int(newWidth * ratio)
+        newImg = cv.resize(img, (newWidth, newHeight),
+                           interpolation=cv.INTER_CUBIC)
+        # print(img.shape, ratio, newImg.shape)
+        cv.imwrite(file, newImg)

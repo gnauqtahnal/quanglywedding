@@ -28,7 +28,7 @@ export const SecCover = ({ className, ...rest }: { className?: string }) => {
       {...rest}
     >
       <BackgroundImage />
-      <ScrollReveal className='z-30 absolute top-[calc(1vh)] text-left'>
+      <ScrollReveal className='z-30 absolute top-[calc(10vh)] text-left'>
         <ScrollRevealFromLeft>
           <div className='flex flex-row items-center justify-center'>
             <p

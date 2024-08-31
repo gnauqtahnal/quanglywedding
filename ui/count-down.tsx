@@ -45,7 +45,7 @@ const CountDown = () => {
           <div
             className={clsx(
               'grid grid-cols-11 grid-rows-1',
-              'text-4xl md:text-5xl',
+              'text-6xl md:text-7xl',
             )}
           >
             <div className=''>{Math.floor(days / 10)}</div>
